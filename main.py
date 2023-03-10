@@ -1,12 +1,12 @@
 from PIL import Image
 
 # get pixel data from image
-img = Image.open("sample3.jpg")
+img = Image.open("deeznuts.jpg")
 width = img.size[0]
 height = img.size[1]
 data = list(img.getdata())
 
-#compute a single brightness value for each pixel(an RGB tuple) #todo: try out the different "algorithms", perhaps allow the user to
+#compute a single brightness value for each pixel(an RGB tupleo) #todo: try out the different "algorithms", perhaps allow the user to
 # pick between em
 #average: regular average
 for j, el in enumerate(data):
